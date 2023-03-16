@@ -1395,7 +1395,7 @@
      * Use a height slightly above the estimated nozzle-to-probe Z offset.
      * For example, with an offset of -5, consider a starting height of -4.
      */
-    #define PROBE_OFFSET_WIZARD_START_Z -4.0 // JT
+    #define PROBE_OFFSET_WIZARD_START_Z -1.0 // JT
 
     // Set a convenient position to do the calibration (probing point and nozzle/bed-distance)
     #define PROBE_OFFSET_WIZARD_XY_POS { X_CENTER, Y_CENTER } // JT
@@ -1441,7 +1441,7 @@
 #endif // HAS_MARLINUI_MENU
 
 #if HAS_DISPLAY
-  //#define SOUND_MENU_ITEM   // Add a mute option to the LCD menu
+  #define SOUND_MENU_ITEM   // Add a mute option to the LCD menu // JT
   #define SOUND_ON_DEFAULT    // Buzzer/speaker default enabled state
 
   // The timeout to return to the status screen from sub-menus
